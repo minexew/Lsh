@@ -719,7 +719,6 @@ U0 Lsh() {
       break;
 
     HistoryPush(&history, line);
-    DCFill;
 
     try {
       ParseAndExecute(line);
@@ -731,7 +730,4 @@ U0 Lsh() {
   HistorySave(&history);
   HistoryFree(&history);
   "$FG$\n";
-  DCFill;
 }
-
-
